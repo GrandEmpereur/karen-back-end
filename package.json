@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "./build/server.js",
   "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development ts-node-dev --respawn --files ./src/server.ts",
     "build": "rimraf ./build && yarn tsc",
